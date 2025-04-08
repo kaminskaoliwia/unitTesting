@@ -1,2 +1,2 @@
-- name: Setup GoogleTest
-  uses: Bacondish2023/setup-googletest@v1.0.1
+name: Setup GoogleTest
+uses: Bacondish2023/setup-googletest@v1.0.1
