@@ -16,7 +16,7 @@ jobs:
       - name: Setup GoogleTest # program stworzony przez kogoś innego
         uses: Bacondish2023/setup-googletest@v1.0.1
 
-      - name: Configure and Build #zbudowanie projektu
+      - name: Configure and Build # zbudowanie projektu
         run: |
           mkdir -p build
           cd build
