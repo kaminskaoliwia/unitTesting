@@ -1,0 +1,29 @@
+name: googleTest
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps: # checkout "daje dostep" do kodu
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup GoogleTest # program stworzony przez kogoś innego
+        uses: Bacondish2023/setup-googletest@v1.0.1
+
+      - name: Configure and Build # zbudowanie projektu
+        run: |
+          mkdir -p build
+          cd build
+          cmake ..
+          make
+
+      - name: Run tests
+        run: |
+          cd build
+          ctest --output-on-failure
