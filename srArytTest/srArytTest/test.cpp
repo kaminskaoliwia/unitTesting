@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "C:\Users\kamin\Desktop\w³asne_repo\unitTesting\srArytTest\srAryt\tab.cpp"
+#include "..\srAryt\tab.cpp"
 
 #define MAX 10
 
