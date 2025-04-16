@@ -1,5 +1,5 @@
 #include "pch.h"
-#include "C:\Users\kamin\Desktop\w³asne_repo\unitTesting\doublerTest2\helloTestSuite\doubler.cpp"
+#include "..\helloTestSuite\doubler.cpp"
 
 TEST(TestCaseName, TestName) {
   EXPECT_EQ(6, doubler(3));
